@@ -70,7 +70,7 @@ use Carbon\Carbon;
                                 <li data-transition="random" data-slotamount="7" data-masterspeed="300"
                                     data-saveperformance="off">
                                     <!-- MAIN IMAGE -->
-                                    <img src="{{ asset('assets/images/slider-img-2.jpg') }}" alt="slider"
+                                    <img src="{{ secure_asset('assets/images/slider-img-2.jpg') }}" alt="slider"
                                         data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                                     <!-- LAYER NR. 1 -->
