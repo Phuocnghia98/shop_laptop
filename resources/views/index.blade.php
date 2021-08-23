@@ -23,7 +23,7 @@ use Carbon\Carbon;
                                 <li data-transition="random" data-slotamount="7" data-masterspeed="300"
                                     data-saveperformance="off">
                                     <!-- MAIN IMAGE -->
-                                    <img src="{{ asset('assets/images/slider-img-1.jpg') }}" alt="slider"
+                                    <img src="{{ secure_asset('assets/images/slider-img-1.jpg') }}" alt="slider"
                                         data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                                     <!-- LAYER NR. 1 -->
@@ -117,7 +117,7 @@ use Carbon\Carbon;
                                 <li data-transition="random" data-slotamount="7" data-masterspeed="300"
                                     data-saveperformance="off">
                                     <!-- MAIN IMAGE -->
-                                    <img src="{{ asset('assets/images/slider-img-3.jpg') }}" alt="slider"
+                                    <img src="{{ secure_asset('assets/images/slider-img-3.jpg') }}" alt="slider"
                                         data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                                     <!-- LAYER NR. 1 -->
@@ -250,7 +250,7 @@ use Carbon\Carbon;
                         <!-- Product -->
                         @foreach ($listProductHot as $itemProduct)
                             <div class="product">
-                                <article> <img class="img-responsive" src="{{ asset($itemProduct->image) }}" alt="">
+                                <article> <img class="img-responsive" src="{{ secure_asset($itemProduct->image) }}" alt="">
                                     <!-- Content -->
                                     <span class="tag">{{ $itemProduct->product_line }}</span>
                                     <a href="{{ Route('productDetails', ['id_product' => $itemProduct->id_product]) }}"
@@ -305,7 +305,7 @@ use Carbon\Carbon;
                     @foreach ($listProduct as $itemProduct)
                         @if ($itemProduct->product_code == $item->product_code)
                             <div class="product">
-                                <article> <img class="img-responsive" src="{{ asset($itemProduct->image) }}" alt=""
+                                <article> <img class="img-responsive" src="{{ secure_asset($itemProduct->image) }}" alt=""
                                         id="{{ $itemProduct->id_product }}_tab"> {!! $itemProduct->cost_price > $itemProduct->price ? '<span class="sale-tag">-' . round((($itemProduct->cost_price - $itemProduct->price) * 100) / $itemProduct->cost_price) . '%</span>' : '' !!}
 
 
@@ -365,7 +365,7 @@ use Carbon\Carbon;
                             @foreach ($listProduct as $itemProduct)
                                 @if ($itemProduct->product_line == $item->product_line)
                                     <div class="product">
-                                        <article> <img class="img-responsive" src="{{ asset($item->image) }}" alt="">
+                                        <article> <img class="img-responsive" src="{{ secure_asset($item->image) }}" alt="">
                                             {!! $itemProduct->cost_price > $itemProduct->price ? '<span class="sale-tag">-' . round((($itemProduct->cost_price - $itemProduct->price) * 100) / $itemProduct->cost_price) . '%</span>' : '' !!}
                                             {!! Carbon::now()->diffInHours($itemProduct->created_at) < 24 ? '<span class="new-tag">New</span>' : '' !!}
                                             <span class="tag">{{ $itemProduct->product_line }}</span> <a href="#."
@@ -410,7 +410,7 @@ use Carbon\Carbon;
                 <!-- Items Slider -->
                 <div class="item-slide-3 with-nav ">
                     @foreach ($listBlog as $itemBlog)
-                        <article> <img class="img-responsive" src="{{ asset($itemBlog->image) }}" alt=""> <span><i
+                        <article> <img class="img-responsive" src="{{ secure_asset($itemBlog->image) }}" alt=""> <span><i
                                     class="fa fa-bookmark-o"></i>{{ $itemBlog->time }}</span> <span><i
                                     class="fa fa-comment-o"></i> 86 Comments</span> <a href="#."
                                 class="tittle">{{ $itemBlog->title }} </a>
@@ -427,11 +427,11 @@ use Carbon\Carbon;
     <section class="light-gry-bg clients-img">
         <div class="container">
             <ul>
-                <li><img src="{{ asset('assets/images/c-img-1.png') }}" alt=""></li>
-                <li><img src="{{ asset('assets/images/c-img-2.png') }}" alt=""></li>
-                <li><img src="{{ asset('assets/images/c-img-3.png') }}" alt=""></li>
-                <li><img src="{{ asset('assets/images/c-img-4.png') }}" alt=""></li>
-                <li><img src="{{ asset('assets/images/c-img-5.png') }}" alt=""></li>
+                <li><img src="{{ secure_asset('assets/images/c-img-1.png') }}" alt=""></li>
+                <li><img src="{{ secure_asset('assets/images/c-img-2.png') }}" alt=""></li>
+                <li><img src="{{ secure_asset('assets/images/c-img-3.png') }}" alt=""></li>
+                <li><img src="{{ secure_asset('assets/images/c-img-4.png') }}" alt=""></li>
+                <li><img src="{{ secure_asset('assets/images/c-img-5.png') }}" alt=""></li>
             </ul>
         </div>
     </section>

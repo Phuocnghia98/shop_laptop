@@ -13,8 +13,8 @@
     <meta name="author" content="M_Adnan" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.html') }}" type="image/x-icon">
-    <link rel="icon" href="{{ asset('assets/images/favicon.html') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ secure_asset('assets/images/favicon.html') }}" type="image/x-icon">
+    <link rel="icon" href="{{ secure_asset('assets/images/favicon.html') }}" type="image/x-icon">
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -24,12 +24,12 @@
 
     <!-- Fonts Online -->
     <link
-        href="{{ asset('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i') }}"
+        href="{{ secure_asset('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i') }}"
         rel="stylesheet">
 
 
     <!-- JavaScripts -->
-    <script src="{{ asset('assets/js/vendors/modernizr.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/vendors/modernizr.js') }}"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -122,7 +122,7 @@
                 <div class="container">
 
                     <div class="logo"> <a href="{{ Route('index') }}"><img
-                                src="{{ asset('assets/images/logo.png') }}" alt=""></a> </div>
+                                src="{{ secure_asset('assets/images/logo.png') }}" alt=""></a> </div>
                     <div class="search-cate">
                         <input type="search" name="keywords_submit" placeholder="Tìm kiếm sản phẩm">
                         <button class="submit" name="search_item" type="submit"><i class="icon-magnifier"></i></button>
@@ -154,7 +154,7 @@
                                     @foreach (session('cart') as $id => $value)
                                         <li>
                                             <div class="media-left"> <a href="#." class="thumb"> <img
-                                                        src="{{ asset($value['image']) }}" class="img-responsive"
+                                                        src="{{ secure_asset($value['image']) }}" class="img-responsive"
                                                         alt="">
                                                 </a> </div>
                                             <div class="media-body"> <a href="#."
@@ -234,55 +234,55 @@
                                     <div class="mega-inside scrn">
                                         <ul class="home-links">
                                             <li><a href="index-2.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-1.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-1.jpg') }}" alt="">
                                                     <span>Home Version 1</span></a></li>
                                             <li><a href="index-3.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-2.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-2.jpg') }}" alt="">
                                                     <span>Home Version 2</span></a> </li>
                                             <li><a href="index-4.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-3.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-3.jpg') }}" alt="">
                                                     <span>Home Version 3</span></a></li>
                                             <li><a href="index-5.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-4.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-4.jpg') }}" alt="">
                                                     <span>Home Version 4</span></a></li>
                                             <li><a href="index-6.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-5.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-5.jpg') }}" alt="">
                                                     <span>Home Version 5</span></a></li>
                                             <li><a href="index-7.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-6.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-6.jpg') }}" alt="">
                                                     <span>Home Version 6</span></a></li>
                                             <li><a href="index-8.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-7.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-7.jpg') }}" alt="">
                                                     <span>Home Version 7</span></a></li>
                                             <li><a href="index-9.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-8.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-8.jpg') }}" alt="">
                                                     <span>Home Version 8</span></a></li>
                                             <li><a href="index-10.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-9.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-9.jpg') }}" alt="">
                                                     <span>Home Version 9</span></a></li>
                                             <li><a href="index-11.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-10.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-10.jpg') }}" alt="">
                                                     <span>Home Version 10</span></a></li>
                                             <li><a href="index-12.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-11.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-11.jpg') }}" alt="">
                                                     <span>Home Version 11</span></a></li>
                                             <li><a href="index-13.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-12.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-12.jpg') }}" alt="">
                                                     <span>Home Version 12</span></a></li>
                                             <li><a href="index-14.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-13.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-13.jpg') }}" alt="">
                                                     <span>Home Version 13</span></a></li>
                                             <li><a href="index-15.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-14.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-14.jpg') }}" alt="">
                                                     <span>Home Version 14</span></a></li>
                                             <li><a href="index-16.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-15.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-15.jpg') }}" alt="">
                                                     <span>Home Version 15</span></a></li>
                                             <li><a href="index-17.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-16.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-16.jpg') }}" alt="">
                                                     <span>Home Version 16</span></a></li>
                                             <li><a href="index-18.html"><img class="img-responsive"
-                                                        src="{{ asset('assets/images/home-17.jpg') }}" alt="">
+                                                        src="{{ secure_asset('assets/images/home-17.jpg') }}" alt="">
                                                     <span>Home Version 17</span></a></li>
                                         </ul>
                                     </div>
@@ -369,7 +369,7 @@
                                                 </ul>
                                             </div>
                                             <div class="col-sm-4"> <img class=" nav-img"
-                                                    src="{{ asset('assets/images/navi-img.png') }}" alt=""> </div>
+                                                    src="{{ secure_asset('assets/images/navi-img.png') }}" alt=""> </div>
                                         </div>
                                     </div>
                                 </div>
@@ -414,7 +414,7 @@
                         <p>Copyright © 2017 <a href="#." class="ri-li"> SmartTech </a>HTML5 template. All rights
                             reserved</p>
                     </div>
-                    <div class="col-sm-6 text-right"> <img src="{{ asset('assets/images/card-icon.png') }}" alt="">
+                    <div class="col-sm-6 text-right"> <img src="{{ secure_asset('assets/images/card-icon.png') }}" alt="">
                     </div>
                 </div>
             </div>
