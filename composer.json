@@ -13,8 +13,7 @@
         "illuminate/events": "^8.52",
         "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
-        "laravel/ui": "^3.3",
-        "fakerphp/faker": "^1.9.1"
+        "laravel/ui": "^3.3"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
