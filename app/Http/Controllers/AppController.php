@@ -20,7 +20,7 @@ class AppController extends Controller
         $productsHotSale = DB::table('orderdetails AS o')
             ->select(DB::raw('p.id_product, p.product_code, p.product_name, COUNT(o.product_code) AS total'))
             ->join('products AS p', 'o.product_code',  '=', 'p.product_code')
-            ->groupBy('o.product_code')
+            ->groupBy('o.product_code', 'p.id_product')
             ->orderBy('total', 'DESC')
             ->limit(8)
             ->get();
