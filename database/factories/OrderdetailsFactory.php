@@ -30,19 +30,26 @@ class OrderdetailsFactory extends Factory
 
         $allPD = DB::table('products')->get()->toArray();
         $allPDCode = array_column($allPD, 'product_code');
+        // return [
+
+        //     'order_number' => $allODNumber[array_rand($allODNumber, 1)],
+        //     'product_code' => $allPDCode[array_rand($allPDCode, 1)],
+        //     'price_each' => $this->faker->randomNumber(2),
+        //     'quantity_ordered' => $this->faker->randomNumber(2),
+        //     'order_lineNumber' => $this->faker->randomNumber(4),
+
+
+        // ];
+
         return [
 
             'order_number' => $allODNumber[array_rand($allODNumber, 1)],
             'product_code' => $allPDCode[array_rand($allPDCode, 1)],
-            'price_each' => $this->faker->randomNumber(2),
-            'quantity_ordered' => $this->faker->randomNumber(2),
-            'order_lineNumber' => $this->faker->randomNumber(4),
+            'price_each' => rand(10, 40),
+            'quantity_ordered' => rand(12, 35),
+            'order_lineNumber' => rand(1234, 3456),
 
 
         ];
-
-
-
-
     }
 }
